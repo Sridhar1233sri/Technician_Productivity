@@ -8,6 +8,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Root health check route
+app.get('/', (req, res) => {
+  res.send('Hyundai Service Center API is running!');
+});
+
 // Login
 app.post('/api/login', async (req, res) => {
   const { username } = req.body;
