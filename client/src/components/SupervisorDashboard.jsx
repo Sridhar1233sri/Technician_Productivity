@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://hyundai-server.onrender.com/api';
 
 function toCSV(rows) {
   const headers = ['Emp ID', 'Name', 'Total Jobs', 'Production Time (hrs)', 'Break Time (hrs)'];
