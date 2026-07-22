@@ -1,0 +1,30 @@
+# Environment variables - NEVER push these
+.env
+.env.local
+.env.production
+
+# Dependencies
+node_modules/
+
+# SQLite database
+*.sqlite
+*.db
+
+# Build output
+dist/
+dist-ssr/
+dev-dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
